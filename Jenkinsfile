@@ -11,10 +11,10 @@ pipeline {
 		}
 		stage('Develop') {
 			when {
-				branch 'master'
+				branch 'NewBranch'
 			}	
 			steps {
-				echo "hello This is master branch"
+				echo "hello This is NewBranch branch"
 			}
 		}
 	}
