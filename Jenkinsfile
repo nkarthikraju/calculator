@@ -4,17 +4,17 @@ pipeline {
 		stage('IfMaster') {
 			when {
 				branch 'master'
-				steps {
-					echo "hello This is master branch"
-				}
+			}	
+			steps {
+				echo "hello This is master branch"
 			}
 		}
 		stage('Develop') {
 			when {
 				branch 'master'
-				steps {
-					echo "hello This is master branch"
-				}
+			}	
+			steps {
+				echo "hello This is master branch"
 			}
 		}
 	}
