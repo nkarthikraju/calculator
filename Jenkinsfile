@@ -14,13 +14,9 @@ pipeline {
 				branch 'NewBranch'
 			}	
 			steps {
-				checkout scm 
-                bat '''
-                @echo off
-                set /p txt=What do you want it to say? ; 
-               rem echo %txt% >C:/Users/namburuk/Desktop/temp/ex.txt"
-                echo %hi% >>C:/Users/namburuk/Desktop/temp/ex.txt"
-                '''
+				//checkout scm 
+                git branch: 'NewBranch', url: 'https://github.com/nkarthikraju/calculator.git'
+                echo "\n\n\n checkout completed \n\n\n"
 			}
 		}
 	}
