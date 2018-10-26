@@ -14,7 +14,7 @@ pipeline {
 				branch 'NewBranch'
 			}	
 			steps {
-				echo "hello This is NewBranch branch"
+				echo "hello This is NewBranch branch changes in new branch"
 			}
 		}
 	}
