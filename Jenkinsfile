@@ -16,7 +16,7 @@ pipeline {
 			steps {
 				//checkout scm 
                 git branch: 'NewBranch', url: 'https://github.com/nkarthikraju/calculator.git'
-                echo "\n\n\n checkout completed \n\n\n"
+                echo "\n\n\n checkout completed \n\n"
 			}
 		}
 	}
