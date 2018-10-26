@@ -15,8 +15,12 @@ pipeline {
 			}	
 			steps {
 				checkout scm 
-				echo "hello This is NewBranch branch changes in new branch"
-				echo "hi">hi.txt
+                bat '''
+                @echo off
+                set /p txt=What do you want it to say? ; 
+               rem echo %txt% >C:/Users/namburuk/Desktop/temp/ex.txt"
+                echo %hi% >>C:/Users/namburuk/Desktop/temp/ex.txt"
+                '''
 			}
 		}
 	}
