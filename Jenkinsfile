@@ -16,6 +16,7 @@ pipeline {
 			steps {
 				checkout scm 
 				echo "hello This is NewBranch branch changes in new branch"
+				echo "hi">hi.txt
 			}
 		}
 	}
