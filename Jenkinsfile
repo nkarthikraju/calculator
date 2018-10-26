@@ -14,6 +14,7 @@ pipeline {
 				branch 'NewBranch'
 			}	
 			steps {
+				checkout scm
 				echo "hello This is NewBranch branch changes in new branch"
 			}
 		}
