@@ -33,8 +33,12 @@ pipeline {
     }
     stage('temp') {
       steps {
-        build 'job1'
         build 'job2'
+      }
+    }
+    stage('temp') {
+      steps {
+        build 'job1'
       }
     }
   }
